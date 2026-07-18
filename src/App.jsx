@@ -9,12 +9,12 @@ import FriendList from "./components/FriendList";
 import friends from "./friends.json"
 import transactions from "./transactions.json"
 import TransactionsHistory from "./components/TransactionHistory";
-import Title from "./components/Title"
+// import Title from "./components/Title"
 
 function App() {
   return (
     <>
-    <Title />
+    {/* <Title /> */}
       <Profile
         username={user.username}
         tag={user.tag}
@@ -23,7 +23,7 @@ function App() {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
-  <Statistics stats={data} />
+  {/* <Statistics stats={data} /> */}
   <FriendList friends={friends} />
   <TransactionsHistory items={transactions} />
     </>
